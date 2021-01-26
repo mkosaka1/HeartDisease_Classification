@@ -26,12 +26,12 @@ Using UCI’s heart disease dataset found [here](https://archive.ics.uci.edu/ml/
 * Categorical — cp, restecg, slope, ca, thal
 
 ## Exploratory Data Analysis (code found in [1. EDA.ipynb](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/1.%20EDA.ipynb))
-<img align="left" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Target_Distribution.png">
+<img align="center" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Target_Distribution.png">
 There is a slight class imbalance, but not severe enough to require upsampling/downsampling methods.
 
 Now let’s see how fasting blood sugar (**fbs**) varies amongst the target variable. Fbs is a diabetes indicator with fbs >120 mg/d is considered diabetic (True):
 
-<img align="left" src="(https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/FBS_%26_Target.png">
+<img align="center" src="(https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/FBS_%26_Target.png">
 Here, we see that the number for class true, is lower compared to class false. This provides an indication that fbs might not be a strong feature differentiating between heart disease an non-disease patient.
 
 Next, we'll look at **ca** which is the number of major blood vessels (0-3) colored by a flourosopy.

@@ -30,6 +30,7 @@ Using UCI’s heart disease dataset found [here](https://archive.ics.uci.edu/ml/
 There is a slight class imbalance, but not severe enough to require upsampling/downsampling methods.
 
 Now let’s see how fasting blood sugar (**fbs**) varies amongst the target variable. Fbs is a diabetes indicator with fbs >120 mg/d is considered diabetic (True):
+
 <img align="left" src="(https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/FBS_%26_Target.png">
 Here, we see that the number for class true, is lower compared to class false. This provides an indication that fbs might not be a strong feature differentiating between heart disease an non-disease patient.
 

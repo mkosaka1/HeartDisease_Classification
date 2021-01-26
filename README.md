@@ -5,24 +5,25 @@ Cardiovascular disease or heart disease is the leading cause of death amongst wo
 Using UCI’s heart disease dataset found [here](https://archive.ics.uci.edu/ml/datasets/Heart+Disease), I build classification models and used ensemble methods to produce a highly accurate model. In the current dataset, publications of this study included 303 patients and chose 14 out of 76 features that are relevant in predicting heart disease.
 
 **Variable Descriptions**
-age: age in years
-sex: sex (1 = male; 0 = female)
-cp: chest pain type — Value 1: typical angina, Value 2: atypical angina, Value 3: non-anginal pain, Value 4: asymptomatic
-trestbps: resting blood pressure (in mm Hg on admission to the hospital)
-chol: serum cholestoral in mg/dl
-fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
-restecg: resting electrocardiographic results- Value 0: normal, Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), Value 2: showing probable or definite left ventricular hypertrophy by Estes’ criteria
-thalach: maximum heart rate achieved
-exang: exercise induced angina (1 = yes; 0 = no)
-oldpeak = ST depression induced by exercise relative to rest
-slope: the slope of the peak exercise ST segment- Value 1: upsloping, Value 2: flat, Value 3: downsloping
-ca: number of major vessels (0–3) colored by flourosopy
-thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
-target: 1 = disease, 0 = no disease
-Variable Types
-Continuous — age, trestbps, chol, thalach, oldpeak
-Binary — sex, fbs, exang, target
-Categorical — cp, restecg, slope, ca, thal
+* age: age in years
+* sex: sex (1 = male; 0 = female)
+* cp: chest pain type — Value 1: typical angina, Value 2: atypical angina, Value 3: non-anginal pain, Value 4: asymptomatic
+* trestbps: resting blood pressure (in mm Hg on admission to the hospital)
+* chol: serum cholestoral in mg/dl
+* fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
+* restecg: resting electrocardiographic results- Value 0: normal, Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), Value 2: showing probable or definite left ventricular hypertrophy by Estes’ criteria
+* thalach: maximum heart rate achieved
+* exang: exercise induced angina (1 = yes; 0 = no)
+* oldpeak = ST depression induced by exercise relative to rest
+* slope: the slope of the peak exercise ST segment- Value 1: upsloping, Value 2: flat, Value 3: downsloping
+* ca: number of major vessels (0–3) colored by flourosopy
+* thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+* target: 1 = disease, 0 = no disease
+
+**Variable Types**
+* Continuous — age, trestbps, chol, thalach, oldpeak
+* Binary — sex, fbs, exang, target
+* Categorical — cp, restecg, slope, ca, thal
 
 ## Exploratory Data Analysis (code found in [1. EDA.ipynb](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/1.%20EDA.ipynb))
 ![image1](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Target_Distribution.png)

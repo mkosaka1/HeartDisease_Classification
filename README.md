@@ -40,27 +40,45 @@ Now let’s see how fasting blood sugar (**fbs**) varies amongst the target vari
 Here, we see that the number for class true, is lower compared to class false. This provides an indication that fbs might not be a strong feature differentiating between heart disease an non-disease patient.
 
 Next, we'll look at **ca** which is the number of major blood vessels (0-3) colored by a flourosopy.
-![image3](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Ca_%26_Target.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Ca_%26_Target.png">
+</p>
 We can clearly see that a large proportion of those with heart disease were likely to have 0 major blood vessels to the heart.
 
 ## Classification (code found in [2. Classification.ipynb](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/2.%20Classification.ipynb)
 A simple dummy classifier resulted in an accuracy score of 49.18%.
 
 Next I took different machine learning models to find which algorithm has the best accuracy score.
-![image4](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/NoGridSearch_ModelEvaluation.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/NoGridSearch_ModelEvaluation.png">
+</p>
 
 Then I selected the top 3 performing classification models (SVC,Logistic Regression, and Naive Bayes)and inputed them into a StackingCVClassifier. This resulted in an accuracy score of ~92%, outperforming all individual classification models.
-![image6](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/StackingCVClassifier_report.png)
-![image5](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/ROC.png)
-![image9](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Ensemble_CM.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/StackingCVClassifier_report.png">
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/ROC.png">
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Ensemble_CM.png">
+</p>
+
 
 Variable **ca** was the most important feature in predicting the target variable
-![image8](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Feature_Importance.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Feature_Importance.png">
+</p>
 
 ## Grid Search + Ensemble
 
 Using grid search methods on all individual classification models then utilizing the Stacking CVClassifier resulted in the same ensemble accuracy without using grid search.
-![image9](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/GridSearch_StackingClass.png)
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/GridSearch_StackingClass.png">
+</p>
 
 ## Summary
 

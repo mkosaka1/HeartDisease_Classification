@@ -26,11 +26,16 @@ Using UCI’s heart disease dataset found [here](https://archive.ics.uci.edu/ml/
 * Categorical — cp, restecg, slope, ca, thal
 
 ## Exploratory Data Analysis (code found in [1. EDA.ipynb](https://github.com/mkosaka1/HeartDisease_Classification/blob/main/1.%20EDA.ipynb))
-<img align="left" width="100" height="100" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Target_Distribution.pn">
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/Target_Distribution.png">
+</p>
+
 There is a slight class imbalance, but not severe enough to require upsampling/downsampling methods.
 
 Now let’s see how fasting blood sugar (**fbs**) varies amongst the target variable. Fbs is a diabetes indicator with fbs >120 mg/d is considered diabetic (True):
-<img align="left" width="100" height="100" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/FBS_%26_Target.png">
+<p align="center">
+  <img width="460" height="300" src="https://github.com/mkosaka1/HeartDisease_Classification/blob/main/Images/FBS_%26_Target.png">
+</p>
 
 Here, we see that the number for class true, is lower compared to class false. This provides an indication that fbs might not be a strong feature differentiating between heart disease an non-disease patient.
 
